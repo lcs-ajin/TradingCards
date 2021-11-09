@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct DetailView: View {
     var body: some View {
-        VStack(spacing:50){
+        VStack(spacing:1){
           
             ZStack{
                 Image("KevinDurant")
@@ -19,21 +19,25 @@ struct ContentView: View {
                     .background(Color.gray)
                     .padding()
                     .background(Color.black)
-                   
-            }
+                    .padding()
+                   }
             
             
-            VStack(alignment: .leading, spacing:1){
+            VStack(alignment: .leading, spacing:1) {
                 
-               Text("2020-2021 stats")
-                    .font(.caption)
-                   
+                
+                    
+                    Text("2020-2021 stats")
+                    .font(.headline)
+                
             }
-           
-            Text("PPG:26.9  RPG:7.1 APG:5.4")
-                .padding(.vertical)
+            Text("PPG:26.9  RPG:7.1 APG:5.4").font(.body)
+                .padding()
+            Text("Season Highlights:").font(.headline)
+            Text(" 49PTS,17REB,10AST against Bucks")
+            
         }
-      
+        .navigationTitle("Kevin Durant")
         
         }
         
@@ -42,6 +46,10 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationView{
+            DetailView()
+        }
+        
+       
     }
 }

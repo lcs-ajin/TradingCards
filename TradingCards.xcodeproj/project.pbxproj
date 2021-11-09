@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8729061F273B0E39004AE746 /* BrooklynNetsPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8729061E273B0E38004AE746 /* BrooklynNetsPlayer.swift */; };
 		879292DC273A030F002899C6 /* TradingCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879292DB273A030F002899C6 /* TradingCardsApp.swift */; };
 		879292DE273A030F002899C6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879292DD273A030F002899C6 /* DetailView.swift */; };
 		879292E0273A0326002899C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 879292DF273A0326002899C6 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8729061E273B0E38004AE746 /* BrooklynNetsPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrooklynNetsPlayer.swift; sourceTree = "<group>"; };
 		879292D8273A030F002899C6 /* TradingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		879292DB273A030F002899C6 /* TradingCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsApp.swift; sourceTree = "<group>"; };
 		879292DD273A030F002899C6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -32,9 +34,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8729061B273B0DAA004AE746 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8729061E273B0E38004AE746 /* BrooklynNetsPlayer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		879292CF273A030F002899C6 = {
 			isa = PBXGroup;
 			children = (
+				8729061B273B0DAA004AE746 /* Model */,
 				879292DA273A030F002899C6 /* TradingCards */,
 				879292D9273A030F002899C6 /* Products */,
 			);
@@ -145,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8729061F273B0E39004AE746 /* BrooklynNetsPlayer.swift in Sources */,
 				879292DE273A030F002899C6 /* DetailView.swift in Sources */,
 				879292DC273A030F002899C6 /* TradingCardsApp.swift in Sources */,
 			);
