@@ -9,17 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
+        VStack(spacing:50){
+          
             ZStack{
                 Image("KevinDurant")
                     .resizable()
                     .scaledToFit()
-                    
+                    .padding()
+                    .background(Color.gray)
+                    .padding()
+                    .background(Color.black)
+                   
             }
-            .background(Color.gray)
-            .padding()
             
-            VStack(alignment: .leading){
+            
+            VStack(alignment: .leading, spacing:1){
                 
                Text("2020-2021 stats")
                     .font(.caption)
@@ -29,7 +33,7 @@ struct ContentView: View {
             Text("PPG:26.9  RPG:7.1 APG:5.4")
                 .padding(.vertical)
         }
-        background(Color.gray)
+      
         
         }
         
