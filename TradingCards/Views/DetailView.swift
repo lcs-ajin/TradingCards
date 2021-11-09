@@ -14,19 +14,26 @@ struct ContentView: View {
                 Image("KevinDurant")
                     .resizable()
                     .scaledToFit()
+                    
             }
-            .background(Color.blue)
+            .background(Color.gray)
+            .padding()
+            
             VStack(alignment: .leading){
                 
                Text("2020-2021 stats")
                     .font(.caption)
                    
             }
-            .padding(.vertical)
+           
             Text("PPG:26.9  RPG:7.1 APG:5.4")
-                
-            }
+                .padding(.vertical)
         }
+        background(Color.gray)
+        
+        }
+        
+       
     }
 
 struct ContentView_Previews: PreviewProvider {
