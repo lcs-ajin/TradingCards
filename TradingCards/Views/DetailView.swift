@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct DetailView: View {
+    
     var body: some View {
+        ZStack{
         VStack(spacing:1){
           
             ZStack{
@@ -33,13 +35,24 @@ struct DetailView: View {
             }
             Text("PPG:26.9  RPG:7.1 APG:5.4").font(.body)
                 .padding()
+                
             Text("Season Highlights:").font(.headline)
-            Text(" 49PTS,17REB,10AST against Bucks")
+               
+                                
+            Text("""
+ 49PTS,17REB,10AST against Bucks, first player to get a 45+PTS Tirple Double in Game 6 in the NBA History
+""")
+                .padding()
+            
             
         }
         .navigationTitle("Kevin Durant")
-        
+        .background(Color.cyan)
+                        .padding()
+       
         }
+        
+    }
         
        
     }
