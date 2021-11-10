@@ -10,7 +10,6 @@ import SwiftUI
 struct DetailView: View {
     
     var body: some View {
-        ZStack{
         VStack(spacing:1){
           
             ZStack{
@@ -33,7 +32,7 @@ struct DetailView: View {
                     .font(.headline)
                 
             }
-            Text("PPG:26.9  RPG:7.1 APG:5.4").font(.body)
+            Text("Power Forward PPG:26.9  RPG:7.1 APG:5.4").font(.body)
                 .padding()
                 
             Text("Season Highlights:").font(.headline)
@@ -50,7 +49,7 @@ struct DetailView: View {
         .background(Color.cyan)
                         .padding()
        
-        }
+        
         
     }
         
