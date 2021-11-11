@@ -14,7 +14,11 @@ struct BrooklynNetsListView: View {
                 NavigationLink(destination: {
                     DetailView(item: currentItem)
                 }, label: {
-                    Text(currentItem.imageName)
+                    Image(currentItem.imageName)
+                        .resizable()
+                        .scaledToFit()
+                        
+                    
                 Text( currentItem.name)
                     Text(currentItem.position)
                 })
@@ -29,7 +33,9 @@ struct BrooklynNetsListView: View {
 }
 
 struct BrooklynNetsListView_Previews: PreviewProvider {
-   static var previews: some View {
-    BrooklynNetsListView()
- }
+    static var previews: some View {
+        BrooklynNetsListView()
+        
+       
+    }
 }
