@@ -47,7 +47,6 @@
 		879292CF273A030F002899C6 = {
 			isa = PBXGroup;
 			children = (
-				8729061B273B0DAA004AE746 /* Model */,
 				879292DA273A030F002899C6 /* TradingCards */,
 				879292D9273A030F002899C6 /* Products */,
 			);
@@ -65,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				879292DB273A030F002899C6 /* TradingCardsApp.swift */,
+				8729061B273B0DAA004AE746 /* Model */,
 				879292E9273A0D4D002899C6 /* Views */,
 				879292DF273A0326002899C6 /* Assets.xcassets */,
 				879292E1273A0326002899C6 /* Preview Content */,

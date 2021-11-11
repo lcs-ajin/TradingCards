@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct DetailView: View {
+    let item: BrooklynNetsPlayer
    
     var body: some View {
         VStack(spacing:1){
           
             ZStack{
-                Image("KevinDurant")
+                Image(item.imageName)
                     .resizable()
                     .scaledToFit()
                     .padding()
@@ -22,30 +23,31 @@ struct DetailView: View {
                     .background(Color.black)
                     .padding()
                    }
-            
-            
+
             VStack(alignment: .leading, spacing:1) {
                 
                 
                     
-                    Text("2020-2021 stats")
+                Text(item.stats)
                     .font(.headline)
                 
             }
-            Text("Power Forward PPG:26.9  RPG:7.1 APG:5.4").font(.body)
+            Text(item.position).font(.body)
+                .padding()
+            Text(item.PPG).font(.body)
+                .padding()
+            Text(item.RPG).font(.body)
+                .padding()
+            Text(item.APG).font(.body)
                 .padding()
                 
-            Text("Season Highlights:").font(.headline)
-               
-                                
-            Text("""
- 49PTS,17REB,10AST against Bucks, first player to get a 45+PTS Tirple Double in Game 6 in the NBA History
-""")
+            Text(item.seasonHighlightsTitle).font(.headline)
+            Text(item.seasonHighlights)
                 .padding()
             
             
         }
-        .navigationTitle("Kevin Durant")
+        .navigationTitle(item.name)
         .background(Color.cyan)
                         .padding()
        
@@ -59,7 +61,7 @@ struct DetailView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            DetailView()
+            DetailView(item: players.last!)
         }
         
        
