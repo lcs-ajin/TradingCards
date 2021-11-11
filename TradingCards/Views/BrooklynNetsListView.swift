@@ -7,14 +7,29 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct BrooklynNetsListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(players){ currentItem in
+                NavigationLink(destination: {
+                    DetailView(item: currentItem)
+                }, label: {
+                    Text(currentItem.imageName)
+                Text( currentItem.name)
+                    Text(currentItem.position)
+                })
+                    
+                
+                
+                
+            }
+        }
+        .navigationTitle("Brooklyn Nets Starters")
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        SwiftUIView()
-    }
+struct BrooklynNetsListView_Previews: PreviewProvider {
+   static var previews: some View {
+    BrooklynNetsListView()
+ }
 }
